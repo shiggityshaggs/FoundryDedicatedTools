@@ -1,0 +1,8 @@
+{
+  "identifier": "CreativeMode",
+  "displayName": "CreativeMode",
+  "assetBundles": [],
+  "assemblies": [
+    "CreativeMode.dll"
+  ]
+}
