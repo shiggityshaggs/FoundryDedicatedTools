@@ -1,8 +1,0 @@
-{
-  "identifier": "SaveOnDemand",
-  "displayName": "SaveOnDemand",
-  "assetBundles": [],
-  "assemblies": [
-    "SaveOnDemand.dll"
-  ]
-}

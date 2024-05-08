@@ -365,3 +365,12 @@ FodyWeavers.xsd
 /ListenIP.zip
 /SaveOnDemand.zip
 /Mods/SaveOnDemand/SaveOnDemand.dll
+/Mods/CreativeMode/CreativeMode.dll
+/Mods/CreativeMode/modInfo.json
+/Mods/CreativeMode/readme.md
+/Mods/ListenIP/ListenIP.dll
+/Mods/ListenIP/modInfo.json
+/Mods/ListenIP/readme.md
+/Mods/SaveOnDemand/modInfo.json
+/Mods/SaveOnDemand/readme.md
+/Mods/SaveOnDemand/SaveOnDemand.dll

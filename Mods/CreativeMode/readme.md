@@ -1,1 +1,0 @@
-Enables creative mode.
