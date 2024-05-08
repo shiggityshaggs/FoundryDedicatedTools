@@ -29,10 +29,20 @@ namespace FoundryDedicatedTools
                     if (key.Modifiers == ConsoleModifiers.Control && key.Key == ConsoleKey.S)
                     {
                         GameRoot.getSingleton().QueueAutosave();
+                        Dump();
                     }
                 }
                 yield return null;
             }
+        }
+
+        private static void Dump()
+        {
+            var major = ResourceDB.resourceLinker.version_major.ToString();
+            var minor = ResourceDB.resourceLinker.version_minor.ToString();
+            var rev = ResourceDB.resourceLinker.version_revision.ToString();
+            var appRev = AppVersion.GetRevision().ToString();
+            Console.WriteLine($"Major: {major}, Minor: {minor}, Rev: {rev}, appRev: {appRev}");
         }
     }
 }
