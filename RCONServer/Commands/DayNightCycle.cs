@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FoundryDedicatedTools
+﻿namespace FoundryDedicatedTools
 {
     public partial class RCONSERVER
     {
