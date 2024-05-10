@@ -1,0 +1,9 @@
+﻿{
+	"identifier": "RCONServer",
+	"displayName": "RCONServer",
+	"assetBundles": [],
+	"assemblies": [
+		"Rcon.dll",
+		"RCONServer.dll"
+	]
+}

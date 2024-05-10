@@ -1,4 +1,6 @@
-﻿namespace FoundryDedicatedTools
+﻿using System;
+
+namespace FoundryDedicatedTools
 {
     public partial class RCONSERVER
     {
@@ -13,8 +15,7 @@
                     return $"CreativeMode is now {enabled}";
                 }
             }
-
-            return "Invalid argument";
+            return $"Invalid argument";
         }
     }
 }

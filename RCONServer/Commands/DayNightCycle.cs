@@ -1,4 +1,6 @@
-﻿namespace FoundryDedicatedTools
+﻿using System;
+
+namespace FoundryDedicatedTools
 {
     public partial class RCONSERVER
     {
@@ -9,8 +11,7 @@
                 GameRoot.addLockstepEvent(new GameRoot.DayNightCycleToogleEvent(enabled));
                 return $"DayNightCycle is now {enabled}";
             }
-
-            return "Invalid argument";
+            return $"Invalid argument";
         }
     }
 }

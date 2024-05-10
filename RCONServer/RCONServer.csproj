@@ -35,12 +35,21 @@
       <HintPath>..\..\FoundryDedicatedServer_Data\Managed\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Channel3">
+      <HintPath>..\..\FoundryDedicatedServer_Data\Managed\Channel3.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Main">
       <HintPath>..\..\FoundryDedicatedServer_Data\Managed\Main.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MessagePack">
       <HintPath>..\..\FoundryDedicatedServer_Data\Managed\MessagePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FoundryDedicatedServer_Data\Managed\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rcon">
@@ -63,10 +72,23 @@
     <Compile Include="Commands\CreativeMode.cs" />
     <Compile Include="Commands\DayNightCycle.cs" />
     <Compile Include="Commands\Help.cs" />
+    <Compile Include="Commands\PauseWhenEmpty.cs" />
+    <Compile Include="Commands\Players.cs" />
+    <Compile Include="Commands\Kick.cs" />
     <Compile Include="Commands\Save.cs" />
+    <Compile Include="Commands\Server.cs" />
+    <Compile Include="ConsoleTable.cs" />
+    <Compile Include="Patches.cs" />
     <Compile Include="RCONSERVER.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="modInfo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
