@@ -374,3 +374,4 @@ FodyWeavers.xsd
 /Mods/SaveOnDemand/modInfo.json
 /Mods/SaveOnDemand/readme.md
 /Mods/SaveOnDemand/SaveOnDemand.dll
+/RCONClient/Post-Build.bat
