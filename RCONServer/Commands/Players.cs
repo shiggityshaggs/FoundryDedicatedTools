@@ -1,4 +1,5 @@
 ﻿using ConsoleTables;
+using UnityEngine;
 
 namespace FoundryDedicatedTools
 {
@@ -17,7 +18,7 @@ namespace FoundryDedicatedTools
                         var online = CharacterManager.isCharacterInWorld((ulong)data.usernameHash);
                         var status = online ? c.pingMS.ToString() : "Offline";
                         var id = online ? c.ServerOnly_currentClientId.ToString() : "";
-                        table.AddRow(id, c.username, status, (int)c.position.x, (int)c.position.z, (int)c.position.y);
+                        table.AddRow(id, c.username, status, Mathf.FloorToInt(c.position.x), Mathf.FloorToInt(c.position.z), Mathf.FloorToInt(c.position.y));
                     }
                 }
                 return table.ToMinimalString().TrimEnd('\r', '\n');
